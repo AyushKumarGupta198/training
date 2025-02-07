@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Joke</title>
+    <style>
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items:center;  
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h2>Random Joke Generator</h2>
+    <button onclick="fetchJoke()">Get a Joke</button>
+    <p id="joke"></p>
+    </div>
+
+    <script>
+        async function fetchJoke() {
+            try {
+                let response = await fetch("https://api.chucknorris.io/jokes/random");//fetch API
+                let data = await response.json();                                     //convert into json format
+                document.getElementById("joke").innerText = data.value;               //display joke
+            } catch (error) {
+                console.log("Error fetching joke:", error);
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Text Change</title>
+    <style>
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .button{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button"><button id="myButton" onclick="changeText()">Click me!</button></div>
+
+    <script>
+        function changeText() {
+            let button = document.getElementById("myButton");
+            if (button.innerText === "Click me!") {
+                button.innerText = "Text Changed!";
+            } else {
+                button.innerText = "Click me!";
+            }
+        }
+    </script>
+</body>
+</html>
