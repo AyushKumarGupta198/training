@@ -1,0 +1,35 @@
+.form-container {
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; /* Ensures fields are in a column */
+    gap: 10px; /* Adds spacing between fields */
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column; /* Makes label wrap around input */
+    font-size: 14px;
+  }
+  
+  input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ensures input takes full width */
+  }
+  
+  button {
+    padding: 8px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }

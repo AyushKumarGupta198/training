@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin: auto;
+  padding: 100px;
 }
 
 .App-logo {
@@ -21,5 +23,20 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.form{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fetch{
+  text-align: center;
+}
+
+.home{
+  text-align: center;
 }
 
