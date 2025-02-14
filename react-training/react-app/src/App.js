@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Header from './components/Header/Header';
+import ContextPage from './pages/ContextPage';
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
       <Route path='/fetch' element={<Fetch/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
+      <Route path='/context' element={<ContextPage/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
