@@ -10,6 +10,8 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Header from './components/Header/Header';
 import ContextPage from './pages/ContextPage';
+import Redux from './pages/Redux';
+import Zustand from './pages/Zustand';
 
 function App() {
   
@@ -23,6 +25,8 @@ function App() {
       <Route path='/about' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/context' element={<ContextPage/>}/>
+      <Route path='/redux' element={<Redux/>}/>
+      <Route path='/zustand' element={<Zustand/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
