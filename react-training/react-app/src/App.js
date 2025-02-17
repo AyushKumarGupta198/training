@@ -12,6 +12,8 @@ import Header from './components/Header/Header';
 import ContextPage from './pages/ContextPage';
 import Redux from './pages/Redux';
 import Zustand from './pages/Zustand';
+import Joke from './pages/joke';
+import User from './pages/User';
 
 function App() {
   
@@ -27,6 +29,8 @@ function App() {
       <Route path='/context' element={<ContextPage/>}/>
       <Route path='/redux' element={<Redux/>}/>
       <Route path='/zustand' element={<Zustand/>}/>
+      <Route path='/joke' element={<Joke/>}/>
+      <Route path='/user' element={<User/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>

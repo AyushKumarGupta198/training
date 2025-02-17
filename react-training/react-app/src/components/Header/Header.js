@@ -1,8 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
+import { useSelector,useDispatch } from 'react-redux';
+//import  {useStore} from '../../pages/Zustand';
+import useStore from '../../zustand/store';
 
 function Header() {
+    const theme = useSelector((state) => state.theme.theme);
+    const {mode,toggleMode}=useStore();
   return (
     <header className='Header'>
         <ul>
@@ -19,6 +24,8 @@ function Header() {
             <li >LogIn</li>
             </Link>
         </ul>
+        <h2>{theme === "light" ? "Light Mode" : "Dark Mode"}</h2>
+        <h2>{mode == "light" ? "Light Mode" : "Dark Mode"}</h2>
     </header>
   )
 }
