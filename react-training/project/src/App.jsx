@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Sidebar from './components/SideNavbar/components'
 import Rewards from './components/Rewards/components'
+import Header from './components/Header/components'
 
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Sidebar/>
+    <Header/>
     <Routes>
-      <Route path='/rewards' element={<Rewards/>}/>
+      <Route path='/' element={<Rewards/>}/>
     </Routes>
     </BrowserRouter>
   )

@@ -5,5 +5,6 @@ export const rewardKeyData=[
     {id:2, title:"Daily bonus", img:goldcoin_1, endDate:new Date().getTime() + 13 * 60 * 60 * 1000 + 48 * 60 * 1000},
     {id:3, title:"Weekly bonus", img:goldcoin_2, endDate:new Date().getTime() + 74 * 60 * 60 * 1000 + 48 * 60 * 1000},
     {id:4, title:"Monthly bonus", img:goldcoin_3, endDate:new Date().getTime() + 500 * 60 * 60 * 1000 + 48 * 60 * 1000},
-    {id:5, title:"Yearly bonus", img:goldcoin_4, endDate:new Date().getTime() + 56436 * 60 * 60 * 1000 + 48 * 60 * 1000},   
+    {id:5, title:"Yearly bonus", img:goldcoin_4, endDate:new Date().getTime() + 56436 * 60 * 60 * 1000 + 48 * 60 * 1000},
+    {id:6, title:"Yearly bonus", img:goldcoin_4, endDate:new Date().getTime() + 56436 * 60 * 60 * 1000 + 48 * 60 * 1000},   
 ]
