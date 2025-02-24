@@ -3,7 +3,7 @@ import { RankCoin } from "../../../assets/png";
 
 const RankCard = ({ rank, progress, points }) => {
   return (
-    <div className="bg-[#0F0F1A] rounded-2xl p-2 w-90 h-[250px] text-white shadow-lg">
+    <div className="bg-[#0F0F1A] rounded-2xl p-2 w-[400px] h-[330px] top-[488px] left-[202px] text-white shadow-lg">
       
       <div className="flex justify-between text-sm text-gray-300">
         <span>{rank}</span> 
@@ -16,21 +16,21 @@ const RankCard = ({ rank, progress, points }) => {
         </select>
       </div>
 
-      <div className="relative flex justify-center items-center my-4">
+      <div className=" flex justify-center items-center my-4 mt-7">
         <img
           src={RankCoin}
           alt="Coin"
-          className="w-30 h-30"
+          className="w-[150px] h-[150px] top-[488px] left-[202px]"
         />
       </div>
 
-      <div className="flex justify-center gap-20 mb-2">
+      <div className="flex justify-center gap-20 mb-2 mt-10">
       <div className="flex flex-col text-sm mt-2">
-        <span className="text-yellow-400 text-lg font-semibold">{points}</span>
+        <span className="text-yellow-400 text-lg font-semibold">🪙{points}</span>
         <span className=" text-gray-400">remaining to rank up</span>
       </div>
 
-      <button className="bg-blue-600 text-white w-25 h-10 mt-3 py-2 rounded-lg hover:bg-blue-400 hover:scale-105">
+      <button className="bg-[#0177DB] text-white w-[141.4px] h-[54px] mt-3 py-2 border border-[#3AA4FF] border-radius-[9px] rounded-lg font-size-[14px] hover:bg-blue-600 hover:scale-102">
         View Chest
       </button>
       </div>

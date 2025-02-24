@@ -8,7 +8,7 @@ const Sidebar = () => {
   const { isOpen, toggleSidebar } = useSidebar();
 
   return (
-    <div className=" relative w-10">
+    <div className=" relative w-10 pl-1 pt-2">
       <div className={`bg-gray-900 text-white p-1 w-10 transition-all duration-300 ${isOpen ? "h-full" : "h-10"} fixed`}>
         <button onClick={toggleSidebar}
           className="bg-white p-1 rounded-full focus:outline-none mb-6">
