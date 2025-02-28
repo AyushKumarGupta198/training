@@ -2,7 +2,7 @@ import Link from "next/link";
 
 async function getPosts() {
     try {
-        const res = await fetch("https://dummyjson.com/posts?limit=9");
+        const res = await fetch("https://dummyjson.com/posts?limit=9",{ next: { revalidate: 3600 } });
         if (!res.ok) throw new Error("Failed to fetch posts");
         return res.json();
     } catch (error) {
