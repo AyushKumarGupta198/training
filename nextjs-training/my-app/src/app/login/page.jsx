@@ -2,12 +2,19 @@
 
 import { useForm } from "react-hook-form";
 import { signIn } from "next-auth/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function LoginPage() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [error, setError] = useState(null);
   
+  useEffect(()=>{
+    const timer=setTimeout(()=>{
+        alert(`email- ayush@gmail.com\npassword- password123`) 
+    },500);
+
+    return () => clearTimeout(timer); 
+  },[])
 
   const onSubmit = async (data) => {
     setError(null);
